@@ -6,9 +6,14 @@
     font-size: 0.7rem;
     &__button{
         width: 1.3rem;
-        // box-shadow: 0 0.625rem 1.25rem rgba(black, 0.25);
         &:hover{
             cursor: pointer;
         }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .counter{
+        font-size: 1.2rem;
     }
 }
