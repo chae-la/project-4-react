@@ -1,0 +1,17 @@
+.search-box{
+    display: flex;
+    justify-content: center;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .search-box__input{
+        font-size: 1.6rem;
+    };
+}
+
+@media screen and (min-width: 1024px) {
+    .search-box__input{
+        font-size: 2rem;
+    };
+}
