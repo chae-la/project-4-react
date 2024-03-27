@@ -4,12 +4,9 @@ import Card from "../../components/Card/Card";
 import DropdownFilter from "../../components/DropdownFilter/DropdownFilter";
 import team from "../../data/team";
 
-type SearchTeamProps = {
-  names: string[];
-  roles: string[];
-};
 
-const SearchTeam = ({ names, roles }: SearchTeamProps) => {
+
+const SearchTeam = () => {
   const [searchInput, setSearchInput] = useState<string>("");
   const [roleFilter, setRoleFilter] = useState<string>("");
 
@@ -17,9 +14,6 @@ const SearchTeam = ({ names, roles }: SearchTeamProps) => {
     const input = event.currentTarget.value.toLowerCase();
     setSearchInput(input);
   };
-  const filteredTeam = names.filter((name) =>
-    name.toLowerCase().includes(searchInput)
-  );
 
   const handleFilterRole = (event: ChangeEvent<HTMLSelectElement>) => {
     const inputs = event.currentTarget.value;
