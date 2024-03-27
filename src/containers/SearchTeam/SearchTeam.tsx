@@ -45,7 +45,7 @@ const SearchTeam = ({ names, roles }: SearchTeamProps) => {
 
       <div>
         {filterRole.map((employee) => (
-          <Card id={employee.id} name={employee.name} role={employee.role} />
+          <Card key={employee.id} id={employee.id} name={employee.name} role={employee.role} />
         ))}
       </div>
     </div>
