@@ -8,6 +8,8 @@
         width: 1.3rem;
         &:hover{
             cursor: pointer;
+            flex-grow: 0.03;
+            transition: 0.2s;
         }
     }
 }

@@ -3,7 +3,7 @@ import Counter from "../Counter/Counter.tsx";
 
 type CardProps = {
     name: string;
-    id?: number;
+    id: number;
     role: string;
 }
 

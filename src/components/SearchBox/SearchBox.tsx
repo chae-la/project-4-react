@@ -9,11 +9,8 @@ type SearchBoxProps = {
 }
 
 const SearchBox = ({label, searchTerm, handleInput}: SearchBoxProps) => {
-    // const capitalisedLabel = label[0].toUpperCase() + label.slice(1);
-
     return (
-        <div className="search-box">
-            {/* <label>{capitalisedLabel}</label> */}
+        <div className="search-box">      
             <input placeholder="Search Team" type="text" name={label} value={searchTerm} onInput={handleInput} className="search-box__input"/>
         </div>
     )
