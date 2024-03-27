@@ -9,7 +9,7 @@ const DropdownFilter = ({ handleChange }: DropdownFilterProps) => {
   
   return (
     <div className="dropdown-filter">
-      <select onChange={handleChange}>
+      <select className="dropdown-filter__input" onChange={handleChange}>
         <option value="">All Roles</option>
         <option value="Junior Software Developer">
           Junior Software Developer

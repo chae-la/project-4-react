@@ -10,14 +10,12 @@ const App = () => {
     <div className="app">
       <h1 className="app__title">Ticket Tracker</h1>
       
-      <div className="app__counter-container">
+      <div className="app__search-team-container">
       <SearchTeam names={names} roles={role} />
       </div>
     </div>
   );
 }; 
-{/* {team.map((member) => (
-  <Card key={member.id} name={member.name} role={member.role} />
-))} */}
+
 
 export default App;
